@@ -159,21 +159,54 @@ func (a *Maintenance) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 
 // Maintenance page templates
 func getMaintenanceTemplate() []byte {
-	return []byte(`<!DOCTYPE html>
+	return []byte(`<!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Under maintenance</title>
-	<script src="https://cdn.tailwindcss.com"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Domain Transfer in Progress</title>
+	<style>
+		body {
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 42px;
+		}
+
+		body {
+			font: 20px Helvetica, sans-serif;
+			color: #333;
+		}
+
+		article {
+			display: block;
+			text-align: left;
+			margin: auto;
+			max-width: 640px;
+			min-width: 320px;
+			padding: 10% 32px;
+		}
+
+		a {
+			color: #0047AA;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+	</style>
 </head>
-<body class="text-center grid place-items-center h-screen">
-	<div>
-	<h1 class="text-3xl font-bold mb-2">
-		This page is under maintenance
-	</h1>
-	<p>Please come back later.</p>
-	</div>
+<body>
+<article>
+	<h1>Maintenance Mode</h1>
+	<p>We're currently updating and improving our infrastructure. This website will be back soon!</p>
+	<p>Wir sind gerade dabei, unsere Infrastruktur zu aktualisieren und zu verbessern. Diese Website wird bald wieder verfügbar sein!</p>
+	<p>Nous sommes en train de mettre à jour et d'améliorer notre infrastructure. Ce site sera bientôt de retour !</p>
+</article>
 </body>
 </html>`)
 }
