@@ -166,7 +166,7 @@ func getMaintenanceTemplate() []byte {
 	<meta name="viewport"
 			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Domain Transfer in Progress</title>
+	<title>Under maintenance</title>
 	<style>
 		body {
 			text-align: center;
@@ -202,7 +202,7 @@ func getMaintenanceTemplate() []byte {
 </head>
 <body>
 <article>
-	<h1>Maintenance Mode</h1>
+	<h1>Under maintenance</h1>
 	<p>We're currently updating and improving our infrastructure. This website will be back soon!</p>
 	<p>Wir sind gerade dabei, unsere Infrastruktur zu aktualisieren und zu verbessern. Diese Website wird bald wieder verfügbar sein!</p>
 	<p>Nous sommes en train de mettre à jour et d'améliorer notre infrastructure. Ce site sera bientôt de retour !</p>
